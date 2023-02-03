@@ -1,0 +1,61 @@
+img{
+    width: 40%;
+    padding: 20px;
+    margin: 5px 10px 20px 15px;
+    border: solid red 10px;
+}
+
+body{
+    padding: 10px;
+    font-style: bold;
+    background-color: #f7f8f9;
+    font-size: 125%;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+    font-size: 1300%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background-color: #B473FA; */
+    padding: 100px 100px;
+    text-transform: uppercase;
+}
+h2{
+    font-style: bold;
+    font-size: 300%;
+    /* /* color: #E646C4; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+footer{
+    font-size: 100%;
+}
+
+nav{
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-weight: bold;
+}
+p{
+    /* background-color; */
+    padding: 20px;
+    margin: 10vw;
+    line-height: 40px;
+}
+
+li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+
+#mainstuff{
+    position: absolute;
+    left: -1000px;
+}
+
+.skip:focus{
+    left: 0px;
+}
+
+/* element.style {
+    display: : grid;
+    grid-template-columns = ;
+} */
