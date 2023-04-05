@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!--connect to js file??-->
-  <link rel="javascript" href="jsfile.js">
+  <!-- <link rel="javascript" href="jsfile.js"> -->
 
   <!-- connect to a Google font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Climate Crisis">
@@ -29,19 +29,17 @@
 <body>
   <a href = "#mainstuff" class="skip">Skip to Main Content</a>
   <header>
-    <div id="burgermenu">
-      <nav>
-          <ul>
-            <li><a class = "active" href="index.html">About</a></li>
-            <li><a href="literature.html">Literature</a></li>
-            <li><a href="history.html">History and Politics</a></li>
-            <li><a href="femdict.html">Feminist Dictionary</a></li>
-          </ul>
-      </nav>
-      <!-- <a href="jsfile:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa-solid fa-caret-down"></i> -->
+    <nav>
+      <ul id="nav-list">
+        <li><a class = "active" href="index.html">About</a></li>
+        <li><a href="literature.html">Literature</a></li>
+        <li><a href="history.html">History and Politics</a></li>
+        <li><a href="femdict.html">Feminist Dictionary</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa-solid fa-caret-down"></i>
       </a>
-    </div>
+    </nav>
     <h1> Woman's Web </h1>
   </header>
 
@@ -85,13 +83,23 @@
       </div>
     </div>
   </main>
+  <script>
+        function myFunction() {
+      var x = document.getElementById("nav-list");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 
   <footer>
     <p class="thanks">
       Thanks for visiting! </p>
     <p>Orginal content created by Kelsey Toporski 2019</p>
     <i class="fa-solid fa-hippo"></i>
-    <a href="#main" class="backtotop">Back to Top</a>
+    <a href="#mainstuff" class="backtotop">Back to Top</a>
   </footer>
 </body>
 </html>

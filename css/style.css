@@ -15,23 +15,61 @@ a.skip{
     position: absolute;
     left: -400px;
     top: -200px;
-  }
+}
 
-nav ul li{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 125%;
-    text-transform: uppercase;
-    margin: 1%;
+nav{
+    margin-top: 14.3vh;
 }
 
 
 nav a{
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+}
+
+
+nav a.icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color:  #f7f8f9;
+    color: black;
+
+}
+
+
+nav a:hover{
+    background: #f7f8f9;
+    color: black;
+}
+
+nav a.active{
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 12px;
+}
+
+nav a.active:hover{
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+
+li{
+    font-weight: bold;
+    line-height: 1.5;
+    padding-left: 15px;
+}
+
+
+a{
+    text-decoration: underline red;
+    color: black;
 }
 
 a.skip:focus{
@@ -42,22 +80,6 @@ a.skip:focus{
 a:hover{
     color: white;
     background-color: black;
-}
-
-nav a.active{
-    text-decoration-line: underline;
-    text-decoration-color: black;
-    text-underline-offset: 17px;
-}
-
-nav a.active:hover{
-    text-decoration-line: underline;
-    text-decoration-color: white;
-}
-
-a{
-    text-decoration: underline red;
-    color: black;
 }
 
 img{
@@ -130,11 +152,6 @@ p{
     background-image: #ffffff;
 }
 
-li{
-    font-weight: bold;
-    line-height: 1.5;
-    padding-left: 15px;
-}
 
 ul{
     margin-top: 3vh;
@@ -153,7 +170,6 @@ ul{
 
 
 i{
-    color: #f7f8f9;
     font-size: 200%;
     padding: 20px;
 }
@@ -194,6 +210,56 @@ a.backtotop:hover{
 
 
 @media only screen and (min-width: 1024px){
+    
+    nav ul li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 125%;
+        text-transform: uppercase;
+        margin: 1%;
+    }
+
+    nav{
+        margin-top: 0;
+    }
+
+    nav a.icon{
+        display: none;
+    }
+    
+    
+    nav a{
+        color: black;
+        background: none;
+        text-decoration: none;
+        padding: 20px;
+    }
+    
+    a.skip:focus{
+        left: auto;
+        top: 200px;
+      }
+    
+    nav a:hover{
+        color: white;
+        background-color: black;
+    }
+    
+    nav a.active{
+        text-decoration-line: underline;
+        text-decoration-color: black;
+        text-underline-offset: 17px;
+    }
+    
+    nav a.active:hover{
+        text-decoration-line: underline;
+        text-decoration-color: white;
+        background-color: black;
+        color: white;
+    }
+    
     body{
         font-size: 100%;
     }

@@ -25,12 +25,15 @@
   <a href = "#mainstuff" class="skip">Skip to Main Content</a>
   <header>
     <nav>
-        <ul>
+        <ul id="nav-list">
           <li><a href="index.html">About</a></li>
           <li><a class="active" href="literature.html">Literature</a></li>
           <li><a href="history.html">History and Politics</a></li>
           <li><a href="femdict.html">Feminist Dictionary</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa-solid fa-caret-down"></i>
+        </a>
     </nav>
       <!-- definitions from meriam webster -->
       <!-- interpretations from
@@ -358,6 +361,16 @@
         </ul>
       </div>
     </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav-list");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
     <footer>
       <p class="thanks">
         Thanks for visiting!
